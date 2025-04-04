@@ -190,7 +190,7 @@
               <div class="box">
                 <img class="logo_title" src="./assets/images/supplemented/title_0.png" alt="">
                 <!-- <p class="title" data-text="Vị dâu sữa">Vị dâu sữa</p> -->
-                <p class="desc"><strong>Thực phẩm bổ sung GrowPLUS+ Váng sữa công thức Vị Sô Cô La & Vani</strong> với công thức phát triển cùng <strong>Nutifood Thụy Điển</strong>, xây dựng nền tảng <strong>FDI <sup>(1)</sup></strong> hỗ trợ đề kháng khỏe, tiêu hóa tốt giúp chuyển hóa tốt các dưỡng chất.</p>
+                <p class="desc"><strong>Thực phẩm bổ sung GrowPLUS+ Váng sữa công thức (Bạc)</strong> với công thức phát triển cùng <strong>Nutifood Thụy Điển</strong>, xây dựng nền tảng <strong>FDI <sup>(1)</sup></strong> hỗ trợ đề kháng khỏe, tiêu hóa tốt giúp chuyển hóa tốt các dưỡng chất.</p>
                 <ul class="note">
                   <li><sup>(1)</sup> <em>Foundation of Digestion & Immunity, là sự kết hợp của 2'FL HMO và FOS, Inulin.</em></li>
                 </ul>
@@ -244,16 +244,16 @@
     </div>
   </div>
   <div class="fruity__info">
-    <div class="inner fruity__info--inner">
+    <div class="inner fruity__info--inner" id="choco_vani">
       <p id="information" class="fruity__hd"><span class="inview from_bottom">Thông tin sản phẩm</span></p>
       <div class="supplemented_info_list">
         <div class=" pc  big_img_blur vani">
           <img src="./assets/images/supplemented/vani_blur_big.png" />
         </div>
-        <div class="supplemented_group_product" id="choco_vani">
+        <div class="supplemented_group_product" >
           <div class="item choco">
             <img src="./assets/images/supplemented/choco_product.png" />
-            <div class="img_anim choco_name">
+            <div class=" choco_name">
               <img src="./assets/images/supplemented/choco_name.png" />
             </div>
             <div class="img_anim choco_icon_0">
@@ -263,7 +263,7 @@
           <div class="item vani">
             
             <img src="./assets/images/supplemented/vani_product.png" />
-            <div class="img_anim vani_name">
+            <div class=" vani_name">
               <img src="./assets/images/supplemented/vani_name.png" />
             </div>
             <div class="img_anim vani_icon_0">
@@ -318,7 +318,7 @@
     <div class="supplemented_more_product" >
       <div class="supplemented_immunel_product_detail">
         <div class="detail_left"  id="immunel">
-          <div class="img_anim">
+          <div class="img_name_immunel">
             <img src="./assets/images/supplemented/immunel_name.png" />
           </div>
           <div class="detail_list">
@@ -363,10 +363,10 @@
     <div class="inner fruity__choices--inner">
       <p id="function" class="fruity__hd"><span class="inview from_bottom">Thêm nhiều <br class="sp">lựa chọn</span></p>
       <div class="list_product_for_sell">
-        <div class="img_anim label_0 pc">
+        <div class=" label_0 pc">
           <img src="assets/images/supplemented/label_0.png" />
         </div>
-        <div class="img_anim label_1 pc">
+        <div class=" label_1 pc">
           <img src="assets/images/supplemented/label_1.png" />
         </div>
         <div class="item">
@@ -404,42 +404,68 @@
     <div class="inner fruity__ingre--inner">
       <p id="nutritional" class="fruity__hd"><span class="inview from_bottom">Thông tin <br class="sp">dinh dưỡng</span></p>
       <div class="inview from_bottom">
+        <div class="img_product_table">
+          <img class="vani_chart active" src="./assets/images/supplemented/vani_product_table.png" />
+          <img class="socola_chart" src="./assets/images/supplemented/choco_product_table.png">
+          <img class="immunel_chart" src="./assets/images/supplemented/immunel_product_table.png">
+        </div>
+        <div class="bg_bottom sp">
+          <div class="bg vani_chart active">
+            <img src="./assets/images/supplemented/vani_bg_bottom.png">
+          </div>
+          <div class="bg socola_chart">
+            <img src="./assets/images/supplemented/choco_bg_bottom.png">
+          </div>
+          <div class="bg immunel_chart">
+            <img src="./assets/images/supplemented/immunel_bg_bottom.png">
+          </div>
+        </div>
         <div class="table_chart_container">
           <div class="tabs">
               <div class="tab active" data-target="vani_chart">Hương Vani</div>
               <div class="tab" data-target="socola_chart">Vị Sô Cô La</div>
-              <div class="tab" data-target="immunel_chart">Sữa non<br>Immunel</div>
+              <div class="tab" data-target="immunel_chart">Sữa non<br>IMMUNEL</div>
           </div>
           
           <div class="table_chart_content-wrapper">
-              <div id="vani_chart" class="content active">
+              <div id="vani_chart" class="content active vani_chart">
                   <div class="nutrition-info">
                       <div class="info-box">
                         <img src="./assets/images/supplemented/vani_table_chart.png" />
                       </div>
-                      <img src="./assets/images/supplemented/vani_bg_bottom.png" alt="Sữa Hương Vani">
                   </div>
               </div>
-              <div id="socola_chart" class="content">
+              <div id="socola_chart" class="content socola_chart">
                   <div class="nutrition-info">
                     <div class="info-box">
                       <img src="./assets/images/supplemented/choco_table_chart.png" />
                     </div>
-                    <img src="./assets/images/supplemented/choco_bg_bottom.png" alt="Sữa Vị Sô Cô La">
                       
                   </div>
               </div>
-              <div id="immunel_chart" class="content">
+              <div id="immunel_chart" class="content immunel_chart">
                 <div class="nutrition-info">
                   <div class="info-box">
                     <img src="./assets/images/supplemented/immunel_table_chart.png" />
                   </div>
-                  <img src="./assets/images/supplemented/immunel_bg_bottom.png" alt="Sữa Vị Sô Cô La">
                     
                 </div>
             </div>
           </div>
         </div>
+
+        <div class="bg_bottom pc">
+          <div class="bg vani_chart active">
+            <img src="./assets/images/supplemented/vani_bg_bottom.png">
+          </div>
+          <div class="bg socola_chart">
+            <img src="./assets/images/supplemented/choco_bg_bottom.png">
+          </div>
+          <div class="bg immunel_chart">
+            <img src="./assets/images/supplemented/immunel_bg_bottom.png">
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
@@ -598,7 +624,10 @@
             this.classList.add("active");
             
             document.querySelector(".content.active").classList.remove("active");
-            document.getElementById(this.dataset.target).classList.add("active");
+            document.querySelector(".img_product_table img.active").classList.remove("active");
+            document.querySelector(".pc .bg.active").classList.remove("active");
+            document.querySelector(".sp .bg.active").classList.remove("active");
+            document.querySelectorAll('.'+this.dataset.target).forEach(e=>e.classList.add("active"));
         });
     });
   </script>

@@ -37,7 +37,9 @@
     display: none !important;
   }
 }
-
+html {
+  scroll-behavior: smooth;
+}
 /* mobile only */
 
 @media (max-width: 767px) {
@@ -1623,6 +1625,7 @@ html.os-html > .os-host > .os-scrollbar {
   width: 25%;
   top: -22%;
   left: 23%;
+  position: absolute;
 }
 img_anim.choco_icon_0 {
   width: 25%;
@@ -1633,6 +1636,7 @@ img_anim.choco_icon_0 {
   width: 30%;
   top: -10%;
   right: 20%;
+  position: absolute;
 }
 .img_anim.choco_icon_0 {
   width: 20%;
@@ -1864,6 +1868,7 @@ img_anim.choco_icon_0 {
   background-size: 200% auto;
   position: relative;
   z-index: 1;
+  padding-bottom: 15%;
 }
 .fruity__choices .list_product_for_sell {
   display: flex;
@@ -1891,58 +1896,15 @@ img_anim.choco_icon_0 {
 }
 .fruity__choices .list_product_for_sell .label_0{
       width: 40%;
-    top: 5%;
+    top: 2%;
     left: 15%;
+    position: absolute;
 }
 .fruity__choices .list_product_for_sell .label_1{
       width: 35%;
     right: -5%;
-    top: 5%;
-}
-@media screen and (min-width: 768px) {
-  .fruity__choices .list_product_for_sell .item .product_img{
-    width: 100%;
-  }
-  .fruity__choices .list_product_for_sell{
-        max-width: 1000px;
-    margin: 0 auto;
-    padding: 100px 0 70%;
-  }
-  .fruity__choices .list_product_for_sell .item{
-    width: 30%;
-    margin-bottom: 0;
-  }
-  .fruity__choices .fruity__choices--inner{
-    background-size: 100%;
-    margin-top: -35%;
-    padding-top: 30%;
-    z-index: 0;
-  }
-  .fruity__choices .supplemented_more_product{
-    position: relative;
-    z-index: 1;
-  }
-  .fruity__choices {
-    margin-top: -7%;
-  }
-  .fruity__choices .supplemented_more_product .detail_left .img_anim{
-    width: 90%;
-  }
-  .fruity__choices .supplemented_more_product .detail_left{
-    width: 60%;
-  }
-  .fruity__choices .supplemented_more_product .image_product_right{
-    width: 100%;
-    padding-top: 10%;
-    margin-left: -10%;
-    margin-right: -15%;
-  }
-  .fruity__choices .supplemented_more_product .supplemented_immunel_product_detail{
-    padding-top: 10%;
-  }
-  .fruity__choices .supplemented_more_product::before{
-    display: none;
-  }
+    top: 2%;
+    position: absolute;
 }
 .fruity__choices--list {
   margin: 60px 0 0;
@@ -1976,9 +1938,10 @@ img_anim.choco_icon_0 {
   max-width: 120px;
 }
 .fruity__ingre {
-  padding: 79px 0 0;
   overflow: hidden;
   z-index: 1;
+  position: relative;
+  background-color: #D0F0F7;
 }
 .fruity__ingre--frame .img {
   margin: 44px -24px 0;
@@ -1997,31 +1960,54 @@ img_anim.choco_icon_0 {
   padding: 0 15px;
   position: relative;
 }
+.fruity__ingre .img_product_table img{
+  display:none;
+}
+.fruity__ingre .img_product_table img.active{
+  display:block;
+}
+.fruity__ingre .img_product_table{
+  width: 75%;
+  position: relative;
+  left: 19%;
+  margin-bottom: -25%;
+  z-index: 1;
+}
 .fruity__ingre .table_chart_container {
-    padding: 20px;
-    display: flex;
-    align-items: flex-start;
+  padding: 20px;
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+.fruity__ingre .bg_bottom.sp{
+  width: 150%;
+  position: relative;
+  right: 30%;
 }
 .fruity__ingre .table_chart_container .tabs {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-right: 20px;
+
+    position: absolute;
+    left: 24px;
+    width: 50%;
 }
 .fruity__ingre .table_chart_container .tab {
-    padding: 10px 20px;
+    padding: 8px 16px;
     cursor: pointer;
-    border-radius: 20px;
+    border-end-start-radius: 20px;
+    border-start-start-radius: 20px;
     background-color: #ABABAB;
     color: #fff;
     font-weight: bold;
     text-align: left;
     transition: all 0.3s ease;
+    font-size: 10px;
 }
 .fruity__ingre .table_chart_container .tab.active {
     background-color: #8B4513;
     color: white;
-    font-size: 24px;
 }
 .fruity__ingre .table_chart_container .tab:first-child.active {
     background-color: #FBCE2B;
@@ -2032,6 +2018,11 @@ img_anim.choco_icon_0 {
 
 .fruity__ingre .table_chart_container .table_chart_content-wrapper {
     flex-grow: 1;
+
+    max-width: 90%;
+    right: 0;
+    position: relative;
+    pointer-events: none;
 }
 .fruity__ingre .table_chart_container .content {
     display: none;
@@ -2041,9 +2032,97 @@ img_anim.choco_icon_0 {
 .fruity__ingre .table_chart_container .content.active {
     display: flex;
 }
+.fruity__ingre .bg_bottom .bg {
+  display: none;
+}
+.fruity__ingre .bg_bottom .bg.active {
+  display: block;
+}
+
 @media screen and (min-width: 768px) {
-  .fruity__ingre {
-    margin-top: -50%;
+  .fruity__ingre .img_product_table{
+    margin-bottom: 0;
+    bottom: 15%;
+    left: 12%;
+    width: 20%;
+    position: absolute;
+  }
+  .fruity__ingre .table_chart_container{
+    z-index: 1;
+    width: 60%;
+    right: 10%;
+    top: 10%;
+    float: right;
+  }
+  .fruity__ingre .bg_bottom.pc{
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+    right: 0;
+    z-index: 0;
+  }
+  .fruity__choices .list_product_for_sell .item .product_img{
+    width: 100%;
+  }
+  .fruity__choices .list_product_for_sell{
+        max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px 0 70%;
+  }
+  .fruity__choices .list_product_for_sell .item{
+    width: 30%;
+    margin-bottom: 0;
+  }
+  .fruity__choices .fruity__choices--inner{
+    background-size: 100%;
+    margin-top: -35%;
+    padding-top: 30%;
+    padding-bottom: 0;
+    z-index: 0;
+  }
+  .fruity__choices .supplemented_more_product{
+    position: relative;
+    z-index: 1;
+  }
+  .fruity__choices {
+    margin-top: -7%;
+  }
+  .fruity__choices .supplemented_more_product .detail_left .img_anim{
+    width: 90%;
+  }
+  .fruity__choices .supplemented_more_product .detail_left{
+    width: 60%;
+  }
+  .fruity__choices .supplemented_more_product .image_product_right{
+    width: 100%;
+    padding-top: 10%;
+    margin-left: -10%;
+    margin-right: -15%;
+  }
+  .fruity__choices .supplemented_more_product .supplemented_immunel_product_detail{
+    padding-top: 10%;
+  }
+  .fruity__choices .supplemented_more_product::before{
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .fruity__ingre{
+    overflow: unset;
+  }
+  .fruity__ingre .table_chart_container .tab {
+    font-size: 16px;
+  }
+  .fruity__ingre .table_chart_container .tab.active {
+    color: white;
+    font-size: 20px;
+  }
+  .fruity__ingre .table_chart_container .tabs{
+    left: 10%;
+  }
+  .fruity__ingre .inview.from_bottom.on:nth-child(2){
+    position: relative;
+    height: 800px;
   }
 }
 .fruity__ingre--frame .txt .bl_nav {
@@ -2740,8 +2819,9 @@ img_anim.choco_icon_0 {
     max-width: 145px;
   }
   .fruity__ingre {
-    padding: 94px 0 0;
     position: relative;
+    margin-top: -65%;
+    background-color: transparent;
   }
   .fruity__ingre--inner {
     position: relative;
