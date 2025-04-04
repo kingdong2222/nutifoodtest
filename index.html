@@ -179,8 +179,8 @@
 <div class="fruity_detail bl_sticky product-detail-wrapper page-product-grow-plus-boosting-digestion--- en p-5">
     <div class="fruity__hid">
     <div class="fruity__mv">
-      <img class="fruity__mv--bg sp" src="./assets/images/supplemented/bg_header.jpg" alt="">
-      <img class="fruity__mv--bg pc" src="./assets/images/supplemented/bg_header.jpg" alt="">
+      <img class="fruity__mv--bg sp" src="./assets/images/supplemented/bg_header.png" alt="">
+      <img class="fruity__mv--bg pc" src="./assets/images/supplemented/bg_header.png" alt="">
     </div>
     <div id="products" class="fruity__types">
       <div class="inner fruity__types--inner">
@@ -194,7 +194,7 @@
                 <ul class="note">
                   <li><sup>(1)</sup> <em>Foundation of Digestion & Immunity, là sự kết hợp của 2'FL HMO và FOS, Inulin.</em></li>
                 </ul>
-                <a class="cmn_btn" href="javascript:;" data-href="#strawberry"><img src="./assets/images/supplemented/btn_discover_vi.png" /></a>
+                <a class="cmn_btn" href="javascript:;" data-href="#choco_vani"><img src="./assets/images/supplemented/btn_discover_vi.png" /></a>
               </div>
             </div>
             <div class="img">
@@ -221,7 +221,7 @@
                 <ul class="note">
                   <li><sup>(1)</sup> <em>Foundation of Digestion & Immunity, là sự kết hợp của 2'FL HMO và FOS, Inulin.</em></li>
                 </ul>
-                <a class="cmn_btn" href="javascript:;" data-href="#banana"><img src="./assets/images/supplemented/btn_discover_vi.png" /></a>
+                <a class="cmn_btn" href="javascript:;" data-href="#immunel"><img src="./assets/images/supplemented/btn_discover_vi.png" /></a>
               </div>
             </div>
             <div class="img">
@@ -247,12 +247,11 @@
     <div class="inner fruity__info--inner">
       <p id="information" class="fruity__hd"><span class="inview from_bottom">Thông tin sản phẩm</span></p>
       <div class="supplemented_info_list">
-        <div class="img_anim pc  big_img_blur vani">
+        <div class=" pc  big_img_blur vani">
           <img src="./assets/images/supplemented/vani_blur_big.png" />
         </div>
-        <div class="supplemented_group_product">
+        <div class="supplemented_group_product" id="choco_vani">
           <div class="item choco">
-            
             <img src="./assets/images/supplemented/choco_product.png" />
             <div class="img_anim choco_name">
               <img src="./assets/images/supplemented/choco_name.png" />
@@ -313,12 +312,12 @@
     </div>
   </div>
   <div class="fruity__choices">
-    <div class="img_anim  big_img_blur pc choco">
+    <div class="  big_img_blur pc choco">
       <img src="./assets/images/supplemented/choco_blur_big.png" />
     </div>
-    <div class="supplemented_more_product">
+    <div class="supplemented_more_product" >
       <div class="supplemented_immunel_product_detail">
-        <div class="detail_left">
+        <div class="detail_left"  id="immunel">
           <div class="img_anim">
             <img src="./assets/images/supplemented/immunel_name.png" />
           </div>
@@ -364,16 +363,17 @@
     <div class="inner fruity__choices--inner">
       <p id="function" class="fruity__hd"><span class="inview from_bottom">Thêm nhiều <br class="sp">lựa chọn</span></p>
       <div class="list_product_for_sell">
-        <div class="img_anim label_0">
+        <div class="img_anim label_0 pc">
           <img src="assets/images/supplemented/label_0.png" />
         </div>
-        <div class="img_anim label_1">
+        <div class="img_anim label_1 pc">
           <img src="assets/images/supplemented/label_1.png" />
         </div>
         <div class="item">
           <div class="product_img">
             <img src="assets/images/supplemented/sp_choco.png" />
           </div>
+          <p>Hộp 55g: 4 hộp/Lốc<br>12 Lốc/Thùng</p>
           <a class="btn_buynow">
             <img src="assets/images/supplemented/btn_buy_now_vi.png" />
           </a>
@@ -382,6 +382,7 @@
           <div class="product_img">
             <img src="assets/images/supplemented/sp_vani.png" />
           </div>
+          <p>Hộp 55g: 4 hộp/Lốc<br>12 Lốc/Thùng</p>
           <a class="btn_buynow">
             <img src="assets/images/supplemented/btn_buy_now_vi.png" />
           </a>
@@ -390,6 +391,7 @@
           <div class="product_img">
             <img src="assets/images/supplemented/sp_immunel.png" />
           </div>
+          <p>Hộp 55g: 4 hộp/Lốc<br>12 Lốc/Thùng</p>
           <a class="btn_buynow">
             <img src="assets/images/supplemented/btn_buy_now_vi.png" />
           </a>
@@ -402,627 +404,48 @@
     <div class="inner fruity__ingre--inner">
       <p id="nutritional" class="fruity__hd"><span class="inview from_bottom">Thông tin <br class="sp">dinh dưỡng</span></p>
       <div class="inview from_bottom">
-        <div class="fruity__ingre--frame">
-          <div class="img">
-            <div class="gr">
-              <img class="sp" src="./assets/images/fruity/img_ingre_strawberry.png" alt="">
-              <img class="pc" src="./assets/images/fruity/img_ingre_strawberry_pc.png" alt="">
-            </div>
-            <div class="gr">
-              <img class="sp" src="./assets/images/fruity/img_ingre_banana.png" alt="">
-              <img class="pc" src="./assets/images/fruity/img_ingre_banana_pc.png" alt="">
-            </div>
+        <div class="table_chart_container">
+          <div class="tabs">
+              <div class="tab active" data-target="vani_chart">Hương Vani</div>
+              <div class="tab" data-target="socola_chart">Vị Sô Cô La</div>
+              <div class="tab" data-target="immunel_chart">Sữa non<br>Immunel</div>
           </div>
-          <div class="txt">
-            <ul class="bl_nav change_img">
-              <li class="active"><span>Vị dâu sữa</span></li>
-              <li><span>Vị chuối sữa</span></li>
-            </ul>
-            <div class="tabs">
-              <div class="tab">
-                <table>
-                  <tr>
-                    <th>Thành phần</th>
-                    <th>Đơn <br class="sp">vị</th>
-                    <th>Trong <br class="sp">110ml</th>
-                    <th>Trong <br class="sp">180ml</th>
-                  </tr>
-                </table>
-                <div class="bl_scroll">
-                  <table>
-                    <tr>
-                      <td>Năng lượng</td>
-                      <td>kcal</td>
-                      <td>96</td>
-                      <td>157</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Chất đạm</td>
-                      <td>g</td>
-                      <td>3,6</td>
-                      <td>5,8</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Chất béo</td>
-                      <td>g</td>
-                      <td>3,9</td>
-                      <td>6,3</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>DHA</td>
-                      <td>mg</td>
-                      <td>4,7</td>
-                      <td>7,7</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Carbohydrat</td>
-                      <td>g</td>
-                      <td>12,1</td>
-                      <td>19,8</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Đường tổng số</td>
-                      <td>g</td>
-                      <td>9,4</td>
-                      <td>15,3</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Chất xơ</td>
-                      <td>g</td>
-                      <td>0,56</td>
-                      <td>0,92</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>2'-Fucosyllactose (2'-FL)</td>
-                      <td>mg</td>
-                      <td>5,7</td>
-                      <td>9,3</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Lysin</td>
-                      <td>mg</td>
-                      <td>207</td>
-                      <td>339</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Threonin</td>
-                      <td>mg</td>
-                      <td>99</td>
-                      <td>162</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Arginin</td>
-                      <td>mg</td>
-                      <td>88</td>
-                      <td>144</td>
-                      
-                    </tr>
-                    <tr>
-                      <td class="gray" colspan="4">Vitamin và khoáng chất</td>
-                    </tr>
-                    <tr>
-                      <td>Vitamin A</td>
-                      <td>IU</td>
-                      <td>339</td>
-                      <td>555</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Vitamin D3</td>
-                      <td>IU</td>
-                      <td>204</td>
-                      <td>333</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Vitamin E</td>
-                      <td>IU</td>
-                      <td>1,0</td>
-                      <td>1,7</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Vitamin C</td>
-                      <td>mg</td>
-                      <td>11</td>
-                      <td>18</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Vitamin K1</td>
-                      <td>µg</td>
-                      <td>3,8</td>
-                      <td>6,2</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Vitamin K2</td>
-                      <td>µg</td>
-                      <td>15</td>
-                      <td>24,5</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Vitamin B1</td>
-                      <td>µg</td>
-                      <td>121</td>
-                      <td>198</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Vitamin B2</td>
-                      <td>µg</td>
-                      <td>113</td>
-                      <td>185</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Niacin</td>
-                      <td>µg</td>
-                      <td>1406</td>
-                      <td>2300</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Acid Pantothenic</td>
-                      <td>µg</td>
-                      <td>641</td>
-                      <td>1049</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Vitamin B6</td>
-                      <td>µg</td>
-                      <td>94</td>
-                      <td>154</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Acid Folic</td>
-                      <td>µg</td>
-                      <td>9,4</td>
-                      <td>15,3</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Biotin</td>
-                      <td>µg</td>
-                      <td>2,3</td>
-                      <td>3,8</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Choline</td>
-                      <td>mg</td>
-                      <td>11,3</td>
-                      <td>18,5</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Natri</td>
-                      <td>mg</td>
-                      <td>34</td>
-                      <td>56</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Kali</td>
-                      <td>mg</td>
-                      <td>132</td>
-                      <td>216</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Calci</td>
-                      <td>mg</td>
-                      <td>167</td>
-                      <td>273</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Phospho</td>
-                      <td>mg</td>
-                      <td>106</td>
-                      <td>173</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Magnesi</td>
-                      <td>mg</td>
-                      <td>9,8</td>
-                      <td>16</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Clorid</td>
-                      <td>mg</td>
-                      <td>66</td>
-                      <td>108</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Kẽm</td>
-                      <td>mg</td>
-                      <td>1,13</td>
-                      <td>1,85</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Iod</td>
-                      <td>µg</td>
-                      <td>16,5</td>
-                      <td>27</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Selen</td>
-                      <td>µg</td>
-                      <td>1,98</td>
-                      <td>3,2</td>
-                      
-                    </tr>
-                    <tr>
-                      <td class="gray nobg" colspan="4">(*) Hàm lượng các chất không thấp hơn 80 % giá trị ghi nhãn.</td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-              <div class="tab">
-                <table>
-                  <tr>
-                    <th>Thành phần</th>
-                    <th>Đơn <br class="sp">vị</th>
-                    <th>Trong <br class="sp">110ml</th>
-                    <th>Trong <br class="sp">180ml</th>
-                  </tr>
-                </table>
-                <div class="bl_scroll">
-                  <table>
-                    <tr>
-                      <td>Năng lượng</td>
-                      <td>kcal</td>
-                      <td>94</td>
-                      <td>154</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Chất đạm</td>
-                      <td>g</td>
-                      <td>3,6</td>
-                      <td>5,8</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Chất béo</td>
-                      <td>g</td>
-                      <td>3,9</td>
-                      <td>6,3</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>DHA</td>
-                      <td>mg</td>
-                      <td>4,7</td>
-                      <td>7,7</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Carbohydrat</td>
-                      <td>g</td>
-                      <td>11,6</td>
-                      <td>18,9</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Đường tổng số</td>
-                      <td>g</td>
-                      <td>9,4</td>
-                      <td>15,3</td>
-                     
-                    </tr>
-                    <tr>
-                      <td>Chất xơ</td>
-                      <td>g</td>
-                      <td>0,56</td>
-                      <td>0,92</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>2'-Fucosyllactose (2'-FL)</td>
-                      <td>mg</td>
-                      <td>5,7</td>
-                      <td>9,3</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Lysin</td>
-                      <td>mg</td>
-                      <td>207</td>
-                      <td>339</td>
-                     
-                    </tr>
-                    <tr>
-                      <td>Threonin</td>
-                      <td>mg</td>
-                      <td>99</td>
-                      <td>162</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Arginin</td>
-                      <td>mg</td>
-                      <td>88</td>
-                      <td>144</td>
-                      
-                    </tr>
-                    <tr>
-                      <td class="gray" colspan="4">Vitamin và khoáng chất</td>
-                    </tr>
-                    <tr>
-                      <td>Vitamin A</td>
-                      <td>IU</td>
-                      <td>339</td>
-                      <td>555</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Vitamin D3</td>
-                      <td>IU</td>
-                      <td>204</td>
-                      <td>333</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Vitamin E</td>
-                      <td>IU</td>
-                      <td>1,0</td>
-                      <td>1,7</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Vitamin C</td>
-                      <td>mg</td>
-                      <td>11</td>
-                      <td>18</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Vitamin K1</td>
-                      <td>µg</td>
-                      <td>3,8</td>
-                      <td>6,2</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Vitamin K2</td>
-                      <td>µg</td>
-                      <td>15</td>
-                      <td>24,5</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Vitamin B1</td>
-                      <td>µg</td>
-                      <td>121</td>
-                      <td>198</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Vitamin B2</td>
-                      <td>µg</td>
-                      <td>113</td>
-                      <td>185</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Niacin</td>
-                      <td>µg</td>
-                      <td>1406</td>
-                      <td>2300</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Acid Pantothenic</td>
-                      <td>µg</td>
-                      <td>641</td>
-                      <td>1049</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Vitamin B6</td>
-                      <td>µg</td>
-                      <td>94</td>
-                      <td>154</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Acid Folic</td>
-                      <td>µg</td>
-                      <td>9,4</td>
-                      <td>15,3</td>
-                     
-                    </tr>
-                    <tr>
-                      <td>Biotin</td>
-                      <td>µg</td>
-                      <td>2,3</td>
-                      <td>3,8</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Choline</td>
-                      <td>mg</td>
-                      <td>11,3</td>
-                      <td>18,5</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Natri</td>
-                      <td>mg</td>
-                      <td>34</td>
-                      <td>56</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Kali</td>
-                      <td>mg</td>
-                      <td>132</td>
-                      <td>216</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Calci</td>
-                      <td>mg</td>
-                      <td>167</td>
-                      <td>273</td>
-                     
-                    </tr>
-                    <tr>
-                      <td>Phospho</td>
-                      <td>mg</td>
-                      <td>106</td>
-                      <td>173</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Magnesi</td>
-                      <td>mg</td>
-                      <td>9,8</td>
-                      <td>16</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Clorid</td>
-                      <td>mg</td>
-                      <td>66</td>
-                      <td>108</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Kẽm</td>
-                      <td>mg</td>
-                      <td>1,13</td>
-                      <td>1,85</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Iod</td>
-                      <td>µg</td>
-                      <td>16,5</td>
-                      <td>27</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Selen</td>
-                      <td>µg</td>
-                      <td>1,98</td>
-                      <td>3,2</td>
-                      
-                    </tr>
-                    <tr>
-                      <td class="gray nobg" colspan="4">(*) Hàm lượng các chất không thấp hơn 80 % giá trị ghi nhãn.</td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="fruity__news">
-    <div class="inner fruity__news--inner">
-      <p id="news" class="fruity__hd"><span class="inview from_bottom">Tin tức</span></p>
-      <div class="inview from_bottom">
-        <div class="fruity__news--frame">
-          <div class="cmn_slider eqh fruity__news--slider">
-                        <div class="item">
-              <a class="box" href="">
-                <div class="img">
-                  <img src="./assets/images/fruity/thumb_news.jpg" alt="">
-                </div>
-                <p class="time">#News - 25.09.2024</p>
-                <h3 class="title">TĂNG CƯỜNG SỨC ĐỀ KHÁNG ĐỂ DUY TRÌ SỨC KHỎE LÀNH MẠNH</h3>
-                <p class="desc">Lorem ipsum dolor sit amet, consecte labore et dolore magna aliqua Ut ...</p>
-                <p class="more">Xem chi tiết</p>
-              </a>
-            </div>
-                        <div class="item">
-              <a class="box" href="">
-                <div class="img">
-                  <img src="./assets/images/fruity/thumb_news.jpg" alt="">
-                </div>
-                <p class="time">#News - 25.09.2024</p>
-                <h3 class="title">TĂNG CƯỜNG SỨC ĐỀ KHÁNG ĐỂ DUY TRÌ SỨC KHỎE LÀNH MẠNH</h3>
-                <p class="desc">Lorem ipsum dolor sit amet, consecte labore et dolore magna aliqua Ut ...</p>
-                <p class="more">Xem chi tiết</p>
-              </a>
-            </div>
-                        <div class="item">
-              <a class="box" href="">
-                <div class="img">
-                  <img src="./assets/images/fruity/thumb_news.jpg" alt="">
-                </div>
-                <p class="time">#News - 25.09.2024</p>
-                <h3 class="title">TĂNG CƯỜNG SỨC ĐỀ KHÁNG ĐỂ DUY TRÌ SỨC KHỎE LÀNH MẠNH</h3>
-                <p class="desc">Lorem ipsum dolor sit amet, consecte labore et dolore magna aliqua Ut ...</p>
-                <p class="more">Xem chi tiết</p>
-              </a>
-            </div>
-                        <div class="item">
-              <a class="box" href="">
-                <div class="img">
-                  <img src="./assets/images/fruity/thumb_news.jpg" alt="">
-                </div>
-                <p class="time">#News - 25.09.2024</p>
-                <h3 class="title">TĂNG CƯỜNG SỨC ĐỀ KHÁNG ĐỂ DUY TRÌ SỨC KHỎE LÀNH MẠNH</h3>
-                <p class="desc">Lorem ipsum dolor sit amet, consecte labore et dolore magna aliqua Ut ...</p>
-                <p class="more">Xem chi tiết</p>
-              </a>
-            </div>
-                        <div class="item">
-              <a class="box" href="">
-                <div class="img">
-                  <img src="./assets/images/fruity/thumb_news.jpg" alt="">
-                </div>
-                <p class="time">#News - 25.09.2024</p>
-                <h3 class="title">TĂNG CƯỜNG SỨC ĐỀ KHÁNG ĐỂ DUY TRÌ SỨC KHỎE LÀNH MẠNH</h3>
-                <p class="desc">Lorem ipsum dolor sit amet, consecte labore et dolore magna aliqua Ut ...</p>
-                <p class="more">Xem chi tiết</p>
-              </a>
-            </div>
+          
+          <div class="table_chart_content-wrapper">
+              <div id="vani_chart" class="content active">
+                  <div class="nutrition-info">
+                      <div class="info-box">
+                        <img src="./assets/images/supplemented/vani_table_chart.png" />
                       </div>
-          <div class="cmn_slider_nav"></div>
+                      <img src="./assets/images/supplemented/vani_bg_bottom.png" alt="Sữa Hương Vani">
+                  </div>
+              </div>
+              <div id="socola_chart" class="content">
+                  <div class="nutrition-info">
+                    <div class="info-box">
+                      <img src="./assets/images/supplemented/choco_table_chart.png" />
+                    </div>
+                    <img src="./assets/images/supplemented/choco_bg_bottom.png" alt="Sữa Vị Sô Cô La">
+                      
+                  </div>
+              </div>
+              <div id="immunel_chart" class="content">
+                <div class="nutrition-info">
+                  <div class="info-box">
+                    <img src="./assets/images/supplemented/immunel_table_chart.png" />
+                  </div>
+                  <img src="./assets/images/supplemented/immunel_bg_bottom.png" alt="Sữa Vị Sô Cô La">
+                    
+                </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
   <div class="fruity__contact">
-    <div class="fruity__contact--anim">
-      <div class="img_anim img06 pc">
-        <img src="./assets/images/fruity/img_anim06.png" alt="">
-      </div>
-      <div class="img_anim img07 pc">
-        <img src="./assets/images/fruity/img_anim07.png" alt="">
-      </div>
-      <div class="img_anim img08 pc">
-        <img src="./assets/images/fruity/img_anim08.png" alt="">
-      </div>
-      <div class="img_anim img09 pc">
-        <img src="./assets/images/fruity/img_anim09.png" alt="">
-      </div>
-    </div>
+    
     <div class="inner fruity__contact--inner">
       <p id="registration" class="fruity__hd"><span class="inview from_bottom">Thông tin đăng ký</span></p>
       <div class="inview from_bottom">
@@ -1168,6 +591,17 @@
 
   <script src="./assets/js/lp-libs.min.js?20250215"></script>
   <script src="./assets/js/supplemented.min.js"></script>
+  <script>
+    document.querySelectorAll(".tab").forEach(tab => {
+        tab.addEventListener("click", function() {
+            document.querySelector(".tab.active").classList.remove("active");
+            this.classList.add("active");
+            
+            document.querySelector(".content.active").classList.remove("active");
+            document.getElementById(this.dataset.target).classList.add("active");
+        });
+    });
+  </script>
 </div>
 <!-- ... -->
 

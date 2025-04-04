@@ -1326,6 +1326,7 @@ html.os-html > .os-host > .os-scrollbar {
   line-height: 1.75;
   padding: 0 !important;
   color: #082649;
+  overflow-x:hidden;
 }
 .fruity_detail a {
   color: #082649;
@@ -1869,12 +1870,44 @@ img_anim.choco_icon_0 {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+  margin-top: 24px;
 }
 .fruity__choices .list_product_for_sell .item{
   width: 100%;
   margin-bottom: 32px;
 }
+.fruity__choices .list_product_for_sell .item .product_img{
+  width: 50%;
+  margin: 0 auto;
+}
+.fruity__choices .list_product_for_sell .item p{
+  text-align: center;
+}
+.fruity__choices .list_product_for_sell .item .btn_buynow{
+      display: block;
+    width: 120px;
+    margin: 0 auto;
+}
+.fruity__choices .list_product_for_sell .label_0{
+      width: 40%;
+    top: 5%;
+    left: 15%;
+}
+.fruity__choices .list_product_for_sell .label_1{
+      width: 35%;
+    right: -5%;
+    top: 5%;
+}
 @media screen and (min-width: 768px) {
+  .fruity__choices .list_product_for_sell .item .product_img{
+    width: 100%;
+  }
+  .fruity__choices .list_product_for_sell{
+        max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px 0 70%;
+  }
   .fruity__choices .list_product_for_sell .item{
     width: 30%;
     margin-bottom: 0;
@@ -1943,9 +1976,9 @@ img_anim.choco_icon_0 {
   max-width: 120px;
 }
 .fruity__ingre {
-  background: rgba(243, 225, 197, 0.2);
   padding: 79px 0 0;
   overflow: hidden;
+  z-index: 1;
 }
 .fruity__ingre--frame .img {
   margin: 44px -24px 0;
@@ -1963,6 +1996,55 @@ img_anim.choco_icon_0 {
   margin: -5px -24px 0;
   padding: 0 15px;
   position: relative;
+}
+.fruity__ingre .table_chart_container {
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+.fruity__ingre .table_chart_container .tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 20px;
+}
+.fruity__ingre .table_chart_container .tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: #ABABAB;
+    color: #fff;
+    font-weight: bold;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+.fruity__ingre .table_chart_container .tab.active {
+    background-color: #8B4513;
+    color: white;
+    font-size: 24px;
+}
+.fruity__ingre .table_chart_container .tab:first-child.active {
+    background-color: #FBCE2B;
+}
+.fruity__ingre .table_chart_container .tab:last-child.active {
+    background-color: #FBCE2B;
+}
+
+.fruity__ingre .table_chart_container .table_chart_content-wrapper {
+    flex-grow: 1;
+}
+.fruity__ingre .table_chart_container .content {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+.fruity__ingre .table_chart_container .content.active {
+    display: flex;
+}
+@media screen and (min-width: 768px) {
+  .fruity__ingre {
+    margin-top: -50%;
+  }
 }
 .fruity__ingre--frame .txt .bl_nav {
   display: flex;
@@ -2975,14 +3057,16 @@ img_anim.choco_icon_0 {
   width: 100%;
   animation: function-bubble 0.3s ease-in-out infinite alternate;
 }
-.fruity .img_anim.big_img_blur.vani{
+.fruity .big_img_blur.vani{
+  position: absolute;
   width: 40%;
   top: -30%;
-  right: -15%;
+  right: -20%;
 }
-.fruity .img_anim.big_img_blur.choco{
-  width: 40%;
-  left: -23%;
+.fruity .big_img_blur.choco{
+  position: absolute;
+  width: 35%;
+  left: -20%;
   top: -12%;
 }
 .fruity .img_anim.img_hmo{
