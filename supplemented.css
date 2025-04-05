@@ -1328,7 +1328,7 @@ html.os-html > .os-host > .os-scrollbar {
   line-height: 1.75;
   padding: 0 !important;
   color: #082649;
-  overflow-x:hidden;
+  overflow:hidden;
 }
 .fruity_detail a {
   color: #082649;
@@ -1568,7 +1568,8 @@ html.os-html > .os-host > .os-scrollbar {
   margin: 2px 0 0;
 }
 .fruity__types--row .txt .note li {
-  font-weight: bold;
+  margin-top: 16px;
+  font-size: 10px;
 }
 .fruity__types--row .txt .note li:not(:last-child) {
   margin-bottom: 2px;
@@ -1577,7 +1578,7 @@ html.os-html > .os-host > .os-scrollbar {
   font-size: 0.625rem;
 }
 .fruity__types--row .txt .cmn_btn {
-  margin-top: 26px;
+  margin-top: 5px;
   z-index: 1;
 }
 .fruity__types--row:first-child .img {
@@ -1656,6 +1657,11 @@ img_anim.choco_icon_0 {
 .supplemented_choco_vani_product_detail{
   position: relative;
 }
+.supplemented_choco_vani_product_detail .text_extra{
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+}
 .supplemented_choco_vani_product_detail .detail_list{
   position: relative;
   display: flex;
@@ -1687,6 +1693,7 @@ img_anim.choco_icon_0 {
 .supplemented_choco_vani_product_detail .detail_list .item .desc{
   font-family: 'Nunito', sans-serif;
   line-height: normal;
+  color: #697DA4
 
 }
 @media (min-width: 768px) {
@@ -1798,7 +1805,7 @@ img_anim.choco_icon_0 {
   font-family: "Nunito", sans-serif;
   font-weight: 900;
   font-size: 1.125rem;
-  color: #0368c6;
+  color: #5C6980;
   letter-spacing: 0;
   margin-bottom: 6px;
   line-height: 1.35;
@@ -1836,9 +1843,12 @@ img_anim.choco_icon_0 {
   max-width: 1218px;
   margin: 0 auto;
 }
+.fruity__choices .supplemented_more_product .text_extra{
+  width: 60%;
+}
 .fruity__choices .supplemented_more_product .detail_left .detail_list{
   position: relative;
-  margin-top: 24px;
+  color: #5C6980;
 }
 .fruity__choices .supplemented_more_product .detail_left{
   font-family: 'Nunito', sans-serif;
@@ -2038,6 +2048,13 @@ img_anim.choco_icon_0 {
 .fruity__ingre .bg_bottom .bg.active {
   display: block;
 }
+.fruity__ingre .table_chart_container{
+  background: rgb(244, 243, 237);
+  margin-top: -5%;
+}
+.fruity__ingre .table_chart_container.is-socola{
+  background-color: #a9745b;
+}
 
 @media screen and (min-width: 768px) {
   .fruity__ingre .img_product_table{
@@ -2053,6 +2070,8 @@ img_anim.choco_icon_0 {
     right: 10%;
     top: 10%;
     float: right;
+    margin-top: 0;
+    background: transparent !important;
   }
   .fruity__ingre .bg_bottom.pc{
     position: absolute;
@@ -2346,11 +2365,27 @@ img_anim.choco_icon_0 {
   margin-top: -14px;
 }
 .fruity__contact {
-  padding: 71px 0 179px;
-  background: url(../images/fruity/bg_contact.png) no-repeat center bottom;
-  background-size: 100% auto;
+  padding: 70px 0 100px;
+  background: rgb(244,243,237);
   margin-bottom: -20px;
   position: relative;
+}
+.fruity__contact .bg_form_back{
+  position: absolute;
+    z-index: -1;
+    bottom: -19%;
+    left: -25%;
+    width: 100%;
+}
+.fruity__contact .bg_form_front{
+  position: absolute;
+    z-index: 2;
+    bottom: -10%;
+    right: -25%;
+    width: 100%;
+}
+.fruity__contact.is-socola{
+  background-color: #a9745b;
 }
 .fruity__contact .fruity__hd {
   font-size: 1.5rem;
@@ -2367,7 +2402,7 @@ img_anim.choco_icon_0 {
 .fruity__contact--frame {
   border: 6px solid #01367d;
   border-radius: 24px;
-  margin: 33px -6px 0;
+  margin: 33px 12px 0;
   padding: 29px 24px;
   background: #fff;
 }
@@ -2553,6 +2588,14 @@ img_anim.choco_icon_0 {
   font-size: inherit;
 }
 @media (min-width: 768px) {
+  .fruity__contact .bg_form_back{
+    bottom: -35%;
+    left: -10%;
+  }
+  .fruity__contact .bg_form_front{
+    bottom: -35%;
+    right: -10%;
+  }
   .fruity__types .first .fruity__types--row.inview.from_bottom.on{
     padding-top: 150px;
     padding-bottom: 150px;
@@ -2820,7 +2863,7 @@ img_anim.choco_icon_0 {
   }
   .fruity__ingre {
     position: relative;
-    margin-top: -65%;
+    margin-top: -55%;
     background-color: transparent;
   }
   .fruity__ingre--inner {
@@ -2957,11 +3000,8 @@ img_anim.choco_icon_0 {
     background: #01367d;
   }
   .fruity__contact {
-    background-image: url(../images/fruity/bg_contact_pc.png);
-    background-position: top center;
-    background-size: cover;
+    background: rgb(244,243,237);
     padding: 280px 0 113px;
-    margin: -130px 0 0;
   }
   .fruity__contact .fruity__hd {
     font-size: 3.25rem;
@@ -3125,7 +3165,7 @@ img_anim.choco_icon_0 {
     margin-top: 0;
   }
   .fruity .fruity__types--row .txt .cmn_btn {
-    margin-top: 20px;
+    margin-top: 5px;
   }
 }
 .fruity .img_anim {
@@ -3136,6 +3176,17 @@ img_anim.choco_icon_0 {
   display: block;
   width: 100%;
   animation: function-bubble 0.3s ease-in-out infinite alternate;
+}
+.img_anim.form_icon_0{
+  z-index: 2;
+    width: 12%;
+    top: 45%;
+    left: 7%;
+}
+.img_anim.form_icon_1{
+  right: -1%;
+  bottom: 30%;
+  width: 15%;
 }
 .fruity .big_img_blur.vani{
   position: absolute;
