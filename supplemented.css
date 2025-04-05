@@ -2085,7 +2085,7 @@ img_anim.choco_icon_0 {
   }
   .fruity__choices .list_product_for_sell{
         max-width: 1000px;
-    margin: 0 auto;
+    margin: 30px auto 0;
     padding: 100px 0 70%;
   }
   .fruity__choices .list_product_for_sell .item{
