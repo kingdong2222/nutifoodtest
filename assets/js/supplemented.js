@@ -19,7 +19,7 @@ function doAnchor(obj) {
     $selector = obj.find(selector_path);
   }
   $selector.click(function() {
-    let offset = ($('.fruity_detail').hasClass('fruity_vn')) ? (($(window).width() < 768) ? 115 : 140) : (($(window).width() < 768) ? 120 : 130);
+    let offset = ($('.supplemented_detail').hasClass('supplemented_vn')) ? (($(window).width() < 768) ? 115 : 140) : (($(window).width() < 768) ? 120 : 130);
     let target = $(this).data('href');
     $('html,body').stop().animate({scrollTop:$(target).offset().top - offset},500);
   });
@@ -55,15 +55,15 @@ function doForm() {
   if ($('#agency-form').length > 0) {
     $('#agency-form').on('submit',function(e) {
       e.preventDefault();
-      $('.fruity_notice').addClass('init');
+      $('.supplemented_notice').addClass('init');
       return false;
     });
-    $('.fruity_notice__backdrop').click(function() {
-      $('.fruity_notice').removeClass('init');
+    $('.supplemented_notice__backdrop').click(function() {
+      $('.supplemented_notice').removeClass('init');
     });
-    $('.fruity__agency .btn_view a').click(function() {
+    $('.supplemented__agency .btn_view a').click(function() {
       $(this).parent().hide();
-      $('.fruity__agency .part_hidden').slideDown();
+      $('.supplemented__agency .part_hidden').slideDown();
     });
   }
 }
@@ -99,7 +99,7 @@ function doTabs(obj) {
 
     // Change image
     if ($selector.parent().hasClass('change_img')) {
-      $('.fruity__ingre--frame .img .gr').eq($(this).index()).show().siblings().hide();
+      $('.supplemented__ingre--frame .img .gr').eq($(this).index()).show().siblings().hide();
     }
   });
 }
@@ -126,15 +126,15 @@ function doModal(obj) {
 $(function() {
   doSticky();
   doAnchor();
-  doSlider($('.fruity__news--slider'));
+  doSlider($('.supplemented__news--slider'));
   doForm();
   doScrollbars();
   doModal();
-  doTabs($('.fruity__ingre'));
-  doTabs($('.fruity__contact'));
+  doTabs($('.supplemented__ingre'));
+  doTabs($('.supplemented__contact'));
   doNearestStores();
   // Only for Nutifood.com.vn
-  $('.fruity_detail.fruity_vn .select-box').click(function() {
+  $('.supplemented_detail.supplemented_vn .select-box').click(function() {
     $(this).toggleClass('open');
   });
 });
