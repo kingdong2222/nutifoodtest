@@ -1449,7 +1449,7 @@ html.os-html > .os-host > .os-scrollbar {
   background-size: 200%;
   position: relative;
   z-index: 1;
-  padding-bottom: 10%;
+  padding-bottom: 12%;
 }
 .supplemented__types .first .img img.sp{
   width: 90%;
@@ -1482,12 +1482,11 @@ html.os-html > .os-host > .os-scrollbar {
 
 @media (min-width: 768px) {
   .second .supplemented__types--row.inview::before{
-    display: none;
+    display: none
   }
   .supplemented__types .second{
     background-size: 100%;
     position: relative;
-    margin-top: -580px;
     background-position-y: top;
   }
   .second .supplemented__types--row.inview.from_bottom.on{
@@ -1875,7 +1874,7 @@ img_anim.choco_icon_0 {
   background-size: 200% auto;
   position: relative;
   z-index: 1;
-  padding-bottom: 15%;
+  padding-bottom: 5%;
 }
 .supplemented__choices .list_product_for_sell {
   display: flex;
@@ -2042,15 +2041,14 @@ img_anim.choco_icon_0 {
 .supplemented__ingre .bg_bottom .bg {
   display: none;
 }
+
 .supplemented__ingre .bg_bottom .bg.active {
   display: block;
 }
 .supplemented__ingre .table_chart_container{
-  background: rgb(244, 243, 237);
-  margin-top: -5%;
-}
-.supplemented__ingre .table_chart_container.is-socola{
-  background-color: #a9745b;
+  background: linear-gradient(180deg, transparent 0, rgba(247, 246, 241, 1) 5%);
+  margin-top: -10%;
+  z-index: -1;
 }
 
 @media screen and (min-width: 768px) {
@@ -2060,6 +2058,9 @@ img_anim.choco_icon_0 {
     left: 12%;
     width: 20%;
     position: absolute;
+  }
+  .supplemented__ingre .bg_bottom .bg.vani_chart, .supplemented__ingre .bg_bottom .bg.immunel_chart{
+    margin-left: -5%;
   }
   .supplemented__ingre .table_chart_container{
     z-index: 1;
@@ -2362,8 +2363,8 @@ img_anim.choco_icon_0 {
   margin-top: -14px;
 }
 .supplemented__contact {
-  padding: 70px 0 100px;
-  background: rgb(244,243,237);
+  padding: 40px 0 100px;
+  background: linear-gradient(180deg, transparent 0, rgba(247, 246, 241, 1) 5%);
   margin-bottom: -20px;
   position: relative;
 }
@@ -2381,9 +2382,6 @@ img_anim.choco_icon_0 {
     right: -25%;
     width: 100%;
 }
-.supplemented__contact.is-socola{
-  background-color: #a9745b;
-}
 .supplemented__contact .supplemented__hd {
   font-size: 1.5rem;
 }
@@ -2397,7 +2395,6 @@ img_anim.choco_icon_0 {
   pointer-events: none;
 }
 .supplemented__contact--frame {
-  border: 6px solid #01367d;
   border-radius: 24px;
   margin: 33px 12px 0;
   padding: 29px 24px;
@@ -2997,7 +2994,6 @@ img_anim.choco_icon_0 {
     background: #01367d;
   }
   .supplemented__contact {
-    background: rgb(244,243,237);
     padding: 280px 0 113px;
   }
   .supplemented__contact .supplemented__hd {
@@ -3210,6 +3206,9 @@ img_anim.choco_icon_0 {
   z-index: 1;
 }
 @media (min-width: 768px) {
+  .supplemented .supplemented__types--row .txt{
+    padding-top: 10%;
+  }
   .supplemented .img_anim.img_hmo{
     top: -5%;
     left: 5%;
