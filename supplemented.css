@@ -1449,7 +1449,7 @@ html.os-html > .os-host > .os-scrollbar {
   background-size: 200%;
   position: relative;
   z-index: 1;
-  padding-bottom: 12%;
+  padding-bottom: 17%;
 }
 .supplemented__types .first .img img.sp{
   width: 90%;
@@ -1828,7 +1828,7 @@ img_anim.choco_icon_0 {
   top: 50px;
   left: 0;
   right: 0;
-  height: 50%;
+  height: 60%;
   background-color: #f0eee4;
 }
 
@@ -1947,6 +1947,15 @@ img_anim.choco_icon_0 {
   overflow: hidden;
   z-index: 1;
   position: relative;
+  
+}
+.supplemented__ingre::before{
+  content: '';
+  position: absolute;
+  top: 0; 
+  left: 0;
+  right: 0;
+  height: 50%;
   background-color: #D0F0F7;
 }
 .supplemented__ingre--frame .img {
@@ -1989,6 +1998,7 @@ img_anim.choco_icon_0 {
   width: 150%;
   position: relative;
   right: 30%;
+  pointer-events: none;
 }
 .supplemented__ingre .table_chart_container .tabs {
     display: flex;
@@ -2052,6 +2062,9 @@ img_anim.choco_icon_0 {
 }
 
 @media screen and (min-width: 768px) {
+  .supplemented__ingre::before{
+    display: none;
+  }
   .supplemented__ingre .img_product_table{
     margin-bottom: 0;
     bottom: 15%;
@@ -2363,8 +2376,8 @@ img_anim.choco_icon_0 {
   margin-top: -14px;
 }
 .supplemented__contact {
+  background-color: rgba(247, 246, 241, 1);
   padding: 40px 0 100px;
-  background: linear-gradient(180deg, transparent 0, rgba(247, 246, 241, 1) 5%);
   margin-bottom: -20px;
   position: relative;
 }
@@ -2863,18 +2876,6 @@ img_anim.choco_icon_0 {
   .supplemented__ingre--inner {
     position: relative;
   }
-  .supplemented__ingre--inner::before {
-    content: "";
-    width: calc((100vw - 100%) + 100% + 308px);
-    left: calc(((100vw - 100%) / 2) * -1);
-    height: 323px;
-    background: url(../images/supplemented/bg_wave.png) repeat center top;
-    background-size: auto 545px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin: 0 auto;
-  }
   .supplemented__ingre--frame {
     margin: 58px 0 0;
     padding-bottom: 47px;
@@ -2994,6 +2995,7 @@ img_anim.choco_icon_0 {
     background: #01367d;
   }
   .supplemented__contact {
+  background: linear-gradient(180deg, transparent 0, rgba(247, 246, 241, 1) 5%);
     padding: 280px 0 113px;
   }
   .supplemented__contact .supplemented__hd {
@@ -3207,7 +3209,7 @@ img_anim.choco_icon_0 {
 }
 @media (min-width: 768px) {
   .supplemented .supplemented__types--row .txt{
-    padding-top: 10%;
+    padding-top: 6%;
   }
   .supplemented .img_anim.img_hmo{
     top: -5%;
