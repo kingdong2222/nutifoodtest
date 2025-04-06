@@ -1481,6 +1481,9 @@ html.os-html > .os-host > .os-scrollbar {
 }
 
 @media (min-width: 768px) {
+  .second .supplemented__types--row.inview::before{
+    display: none;
+  }
   .supplemented__types .second{
     background-size: 100%;
     position: relative;
