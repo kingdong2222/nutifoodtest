@@ -2394,6 +2394,7 @@ img_anim.choco_icon_0 {
     bottom: -10%;
     right: -25%;
     width: 100%;
+    pointer-events: none;
 }
 .supplemented__contact .supplemented__hd {
   font-size: 1.5rem;
@@ -2604,7 +2605,7 @@ img_anim.choco_icon_0 {
     right: -10%;
   }
   .supplemented__types .first .supplemented__types--row.inview.from_bottom.on{
-    padding-top: 150px;
+    padding-top: 300px;
     padding-bottom: 150px;
   }
   .supplemented .cmn_btn {
@@ -2750,9 +2751,6 @@ img_anim.choco_icon_0 {
   .supplemented__types--row .txt .note li sup {
     top: -7px;
     margin-right: 3px;
-  }
-  .supplemented__types--row .txt .cmn_btn {
-    margin-top: 40px;
   }
   .supplemented__types--row:first-child .img {
     order: 1;
@@ -3080,6 +3078,7 @@ img_anim.choco_icon_0 {
   .supplemented__contact--form .cmn_btn {
     margin-top: 39px;
     max-width: 141px;
+    background: #01367d;
   }
 }
 @media (max-width: 374px) {
