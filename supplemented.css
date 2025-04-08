@@ -1279,21 +1279,21 @@ html.os-html > .os-host > .os-scrollbar {
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url("../fonts/SF-Pro-Rounded-Medium.otf") format("opentype");
+  src: url("./assets/fonts/SF-Pro-Rounded-Medium.otf") format("opentype");
 }
 @font-face {
   font-family: "SF Pro Rounded";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src: url("../fonts/SF-Pro-Rounded-Bold.otf") format("opentype");
+  src: url("./assets/fonts/SF-Pro-Rounded-Bold.otf") format("opentype");
 }
 @font-face {
   font-family: "Baloo Bhai";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url("../fonts/Baloo-Bhai-Regular.woff") format("woff");
+  src: url("./assets/fonts/Baloo-Bhai-Regular.woff") format("woff");
 }
 .supplemented__hid {
   overflow: hidden;
@@ -1366,7 +1366,7 @@ html.os-html > .os-host > .os-scrollbar {
   text-align: center;
   text-transform: uppercase;
   color: #01367d;
-  font-family: "SF Pro Rounded", sans-serif;
+  font-family: "Baloo Bhai", sans-serif;
   font-size: 2rem;
   letter-spacing: -0.7px;
   margin: 0;
@@ -1488,20 +1488,27 @@ html.os-html > .os-host > .os-scrollbar {
     background-size: 100%;
     position: relative;
     background-position-y: top;
+    margin-top: -70%;
   }
   .second .supplemented__types--row.inview.from_bottom.on{
-    padding: 550px 24px 200px;
+    padding: 35% 24px 200px;
   }
 
   .supplemented__types .first{
     background: url('./assets/images/supplemented/bg_2.png') center center no-repeat;
     background-size: 100%;
     background-position: center center;
+    top: -150px;
   }
   .supplemented__types .first::before{
     display: none;
   }
 
+}
+@media (min-width: 1200px) {
+  .second .supplemented__types--row.inview.from_bottom.on{
+    padding: 37% 24px 200px;
+  }
 }
 
 .supplemented__types--row {
@@ -1800,7 +1807,7 @@ img_anim.choco_icon_0 {
   text-transform: uppercase;
   font-family: "Nunito", sans-serif;
   font-weight: 900;
-  font-size: 1.125rem;
+  font-size: 16px;
   color: #5C6980;
   letter-spacing: 0;
   margin-bottom: 6px;
@@ -2020,6 +2027,7 @@ img_anim.choco_icon_0 {
     text-align: left;
     transition: all 0.3s ease;
     font-size: 10px;
+    font-family: "Baloo Bhai", sans-serif;
 }
 .supplemented__ingre .table_chart_container .tab.active {
     background-color: #8B4513;
@@ -2056,8 +2064,8 @@ img_anim.choco_icon_0 {
   display: block;
 }
 .supplemented__ingre .table_chart_container{
-  background: linear-gradient(180deg, transparent 0, rgba(247, 246, 241, 1) 5%);
-  margin-top: -10%;
+  background: #F6F4EE;
+  margin-top: -2%;
   z-index: -1;
 }
 
@@ -2086,7 +2094,7 @@ img_anim.choco_icon_0 {
   }
   .supplemented__ingre .bg_bottom.pc{
     position: absolute;
-    bottom: -10%;
+    bottom: -25%;
     left: 0;
     right: 0;
     z-index: 0;
@@ -2148,7 +2156,7 @@ img_anim.choco_icon_0 {
     font-size: 20px;
   }
   .supplemented__ingre .table_chart_container .tabs{
-    left: 10%;
+    left: 9%;
   }
   .supplemented__ingre .inview.from_bottom.on:nth-child(2){
     position: relative;
@@ -2609,7 +2617,7 @@ img_anim.choco_icon_0 {
     padding-bottom: 150px;
   }
   .supplemented .cmn_btn {
-    max-width: 191px;
+    max-width: 180px;
     height: 56px;
     font-size: 1.125rem;
     transition: all 0.3s;
@@ -2740,6 +2748,7 @@ img_anim.choco_icon_0 {
     margin: 15px 0 0;
     letter-spacing: 0.36px;
     line-height: 1.78;
+    font-size: 14px;
   }
   .supplemented__types--row .txt .desc sup {
     margin-left: 1px;
@@ -2994,8 +3003,10 @@ img_anim.choco_icon_0 {
   }
   .supplemented__contact {
   background: linear-gradient(180deg, transparent 0, rgba(247, 246, 241, 1) 5%);
-    padding: 280px 0 113px;
+    padding: 100px 0 113px;
+    z-index: 1;
   }
+ 
   .supplemented__contact .supplemented__hd {
     font-size: 3.25rem;
   }
@@ -3081,6 +3092,12 @@ img_anim.choco_icon_0 {
     background: #01367d;
   }
 }
+@media only screen and (min-width: 768px) {
+  .supplemented__contact .inview.from_bottom.on{
+    min-height: 800px;
+  }
+}
+
 @media (max-width: 374px) {
   .supplemented__subhd span {
     font-size: 1rem;
