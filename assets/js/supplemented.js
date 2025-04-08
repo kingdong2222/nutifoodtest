@@ -1,3 +1,16 @@
+document.querySelectorAll(".table_chart_container .tab").forEach(tab => {
+  tab.addEventListener("click", function() {
+      document.querySelector(".tab.active").classList.remove("active");
+      this.classList.add("active");
+      
+      document.querySelector(".content.active").classList.remove("active");
+      document.querySelector(".img_product_table img.active").classList.remove("active");
+      document.querySelector(".pc .bg.active").classList.remove("active");
+      document.querySelector(".sp .bg.active").classList.remove("active");
+      document.querySelectorAll('.'+this.dataset.target).forEach(e=>e.classList.add("active"));
+    });
+});
+
 function doSticky(obj) {
   window.addEventListener('scroll',function() {
     const selector_path = '.bl_sticky';
